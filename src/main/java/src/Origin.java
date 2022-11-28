@@ -5,10 +5,11 @@ public enum Origin {
     ESPAGNOL(18),
     ARGENTIN(18),
     TUNISIEN(18),
-    AMERICAIN(21),
+    ETATS_UNIENT(21),
     JAPONAIS(20);
 
     int ageAdulte;
 
     Origin(int ageAdulte) { this.ageAdulte = ageAdulte; }
+
 }
