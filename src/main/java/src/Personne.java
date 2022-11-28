@@ -16,7 +16,7 @@ public class Personne {
         this.argent = 100;
     }
 
-    Personne(String nom, Origin origin, int age, boolean aDesDocumentIdentite,int argent ) {
+    public Personne(String nom, Origin origin, int age, boolean aDesDocumentIdentite, int argent) {
         this.nom = nom;
         this.origin = origin;
         this.age = age;
