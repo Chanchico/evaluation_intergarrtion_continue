@@ -7,10 +7,10 @@ import java.util.List;
 
 public class Navire extends Bateau{
 
-    Personne capitaine;
-    List<Canot> canotDeSauvetage;
+    public Personne capitaine;
+    public List<Canot> canotDeSauvetage;
     public boolean alarmActive= false;
-    String name;
+    public String name;
 
     public Navire() {
         super(10);
@@ -29,13 +29,18 @@ public class Navire extends Bateau{
         for (int i = 0; i < nbCanot; i++) {
             this.canotDeSauvetage.add(new Canot());
         }
-    this.name = name;
+        this.name = name;
     }
 
     @Override
     public boolean ajouterPassager(Personne personne){
-        System.out.println(super.ajouterPassager(personne) ? personne.nom +" est monté à bord du " + this.name : "Il n'y a plus de place à bord du navire");
-        return (super.ajouterPassager(personne));
+        if (super.ajouterPassager(personne)) {
+            System.out.println(personne.nom + " est monté à bord du " + this.name);
+            return true;
+        } else {
+            System.out.println("Il n'y a plus de place à bord du navire");
+            return false;
+        }
     }
 
     public void laguerLesCanot() {

@@ -1,14 +1,14 @@
 package src;
 
 public class Personne {
-    String nom;
-    Origin origin;
-    int age;
-    boolean aDesDocumentIdentite;
+    public String nom;
+    public Origin origin;
+    public int age;
+    public boolean aDesDocumentIdentite;
 
-    int argent;
+    public int argent;
 
-    Personne() {
+    public Personne() {
         this.nom = "Laversieb";
         this.origin = Origin.ETATS_UNIENT;
         this.age = 42;
