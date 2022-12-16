@@ -3,7 +3,7 @@
 PWD=`pwd`
 globalEmail=`git config --global --get user.email`
 signingKey=`git config --global --get user.signingkey`
-workEmail="alaa.@gmail.com"
+workEmail="alaa@gmail.com"
 
   if [[ $PWD != "*demo*" && $globalEmail != $workEmail ]];
     then
