@@ -4,6 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Prison {
-    static List <Personne> prisionnier  = new ArrayList<>();;
+    public static List <Personne> prisonnier  = new ArrayList<>();;
 
 }

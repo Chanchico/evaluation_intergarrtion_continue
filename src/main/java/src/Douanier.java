@@ -14,7 +14,7 @@ public class Douanier{
                 return navire.passagers.add(passager);
             }
             else {
-                Prison.prisionnier.add(passager);
+                Prison.prisonnier.add(passager);
                 System.out.println("Et un tour en prison");
                 return false;
             }

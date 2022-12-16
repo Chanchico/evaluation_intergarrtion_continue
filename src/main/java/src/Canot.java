@@ -4,20 +4,25 @@ import java.util.List;
 
 public class Canot extends Bateau{
 
-    boolean estALaMere;
+    public boolean estALaMer;
     public Canot() {
         super(3);
-        this.estALaMere = false;
+        this.estALaMer = false;
     }
 
     @Override
     public boolean ajouterPassager(Personne personne){
-        System.out.println(super.ajouterPassager(personne) ? "Le passage est monté à bord du canot" : "Il n'y a plus de place à bord du canot");
-        return (super.ajouterPassager(personne));
+        if (super.ajouterPassager(personne)) {
+            System.out.println("Le passage est monté à bord du canot");
+            return true;
+        } else {
+            System.out.println("Il n'y a plus de place à bord du canot");
+            return false;
+        }
     }
 
     public List<Personne> lanceCanot() {
-        estALaMere = true;
+        estALaMer = true;
         return super.passagers;
     }
 
