@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4661d4cb-32d4-47e2-b57b-070b01697585" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.githooks/pre-commit.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/.githooks/pre-commit.sh" afterDir="false" />
-    </list>
+    <list default="true" id="4661d4cb-32d4-47e2-b57b-070b01697585" name="Changes" comment="init des class" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
