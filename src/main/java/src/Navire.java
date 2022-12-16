@@ -7,30 +7,40 @@ import java.util.List;
 
 public class Navire extends Bateau{
 
-    Personne capitaine;
-    List<Canot> canotDeSauvetage;
-    boolean alarmActive;
+    public Personne capitaine;
+    public List<Canot> canotDeSauvetage;
+    public boolean alarmActive= false;
+    public String name;
 
-    Navire() {
+    public Navire() {
         super(10);
         this.capitaine = new Personne("Lascou Antoine", Origin.FRANCAIS, 42, true, 1000);
 
         this.canotDeSauvetage = new ArrayList<Canot>();
         this.canotDeSauvetage.addAll(Arrays.asList(new Canot(), new Canot()));
+        this.name = "Black Pearl";
     }
 
-    Navire(Personne capitaine, List<Personne> passagers, int nbMaximumPassager, int nbCapsule) {
+    public Navire(Personne capitaine, int nbMaximumPassager, int nbCanot, String name) {
         super(nbMaximumPassager);
         this.capitaine = capitaine;
-        for (int i = 0; i < nbCapsule; i++) {
+
+        this.canotDeSauvetage = new ArrayList<Canot>(nbCanot);
+        for (int i = 0; i < nbCanot; i++) {
             this.canotDeSauvetage.add(new Canot());
         }
+        this.name = name;
     }
 
     @Override
     public boolean ajouterPassager(Personne personne){
-        System.out.println(super.ajouterPassager(personne) ? "Le passage est monté à bord du navire" : "Il n'y a plus de place à bord du navire");
-        return (super.ajouterPassager(personne));
+        if (super.ajouterPassager(personne)) {
+            System.out.println(personne.nom + " est monté à bord du " + this.name);
+            return true;
+        } else {
+            System.out.println("Il n'y a plus de place à bord du navire");
+            return false;
+        }
     }
 
     public void laguerLesCanot() {
@@ -56,5 +66,10 @@ public class Navire extends Bateau{
             }
         }
     }
+
+    public void percuteIcebeg(){
+        alarmActive = true;
+    }
+
 
 }
