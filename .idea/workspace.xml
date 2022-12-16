@@ -58,10 +58,14 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+<<<<<<< HEAD
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+=======
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+>>>>>>> feat/hooks
   }
 }</component>
   <component name="RunManager" selected="Application.Main">
@@ -97,7 +101,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669647978250</updated>
+<<<<<<< HEAD
       <workItem from="1669647980654" duration="6484000" />
+=======
+      <workItem from="1669647980654" duration="1916000" />
+      <workItem from="1671226944265" duration="1367000" />
+>>>>>>> feat/hooks
     </task>
     <task id="LOCAL-00001" summary="init des class">
       <created>1669650125198</created>
